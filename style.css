@@ -209,3 +209,36 @@ footer ul li{
    list-style: none;
    font-size: 20px;
 }
+.dropdown-menu{
+    z-index: 2;
+}
+@media  screen and (min-width:580px) {
+    .mobileview{
+        display: none;
+    } 
+}
+@media  screen and (max-width:580px) {
+  .slider{
+    display: none;
+  }
+  .mobileview{
+    display: grid;
+    height: auto;
+    width: 100%;
+    flex-direction:column;
+    gap: 10px;
+
+
+  }
+  .categories{
+    display:grid;
+    flex-direction: row;
+    gap: 10px;
+
+  }
+ header .navbar{
+    display: none;
+ }
+
+    
+}

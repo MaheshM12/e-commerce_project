@@ -16,7 +16,7 @@
             
         }
         .item{
-            background-color:white;
+            background-color:khaki;
             display: flex;
             flex-direction:column ;
             text-align: center;
@@ -139,5 +139,22 @@
 
     </div>
 </div>
+ <script>
+    let ab=document.getElementsByClassName('item');
+        for(let i=0;i<ab.length;i++){
+            ab[i].addEventListener('mouseover',function on(){
+            ab[i].style.transform='scale(1.1)';
+            ab[i].style.border='1px solid black';
+        });
+        };
+        let a=document.getElementsByClassName('item');
+        for(let i=0;i<a.length;i++){
+            a[i].addEventListener('mouseout',function out(){
+            a[i].style.transform='scale(1)';
+            a[i].style.border='none';
+        });
+        };
+
+ </script>
 </body>
 </html>
