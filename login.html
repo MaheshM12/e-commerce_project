@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             margin: 0;
@@ -35,6 +36,7 @@
             position: relative;
             border-radius: 2px solid gray;
             margin: 30px 0;
+
         }
         .txtfield input{
             width: 100%;
@@ -66,6 +68,7 @@
         input[type="submit"]:hover{
             border-color: #2691d9;
             transition: .5s;
+           
         }
         .signup_link{
             margin: 30px 0;
@@ -80,17 +83,36 @@
         .signup_link a:hover{
             text-decoration: underline;
         }
+        .txtfield .fa{
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            float: right;
+            display: none;
+        }
+        .fa-times{
+            color: red;
+            padding-left: 15px;
+        }
+        .fa-check{
+            color: green;
+            padding-right: 15px;   
+        }
     </style>
 </head>
 <body>
     <div class="center">
        <h1>Login</h1>
-       <form method="post">
+       <form method="post" onsubmit="return validate()">
         <div class="txtfield">
-            <input type="text" required placeholder="username">
+            <input type="text" required placeholder="username" id="name">
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
         </div>
         <div class="txtfield">
-            <input type="text" required placeholder="password">
+            <input type="text" required placeholder="password" id="pass">
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
         </div>
         <div class="txtfield">Forgot Password? </div>
         <input type="submit" value="Login">
@@ -99,5 +121,6 @@
         </div>  
        </form>
     </div>
+    <script src="./login.js"></script>
 </body>
 </html>
