@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myfavorite</title>
+    <link rel="stylesheet" href="./javascript/styeel.css">
     <style>
        .container{
         display: grid;
@@ -90,7 +91,7 @@
             <p>Sony Alpha 7IV Full-Frame Hybrid Camera (ILCE-7M4K) | 33 MP
                  Mirrorless Camera, 10 FPS, 4K/60p, with 28 -70 mm Zoom Lens</p>
                  <button type="submit" class="button"><a href="payment.html">Buy Now</a></button>
-                 <button type="submit" class="button">Remove</button>
+                 <button type="submit" class="button" onclick="addtocard(`${i++}`)">Remove</button>
         </div>
        </div>
        <div class="items">
@@ -109,5 +110,15 @@
         </div>
        </div>
     </div>
+    <div class="sidebar">
+        <div class="head">My Favorite</div>
+        <div id="cardItem">Your Card Is Empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+           
+        </div>
+    </div>
+    <script src="./javascript/add.js"></script>
 </body>
 </html>

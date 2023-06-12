@@ -14,34 +14,19 @@
     <header class="navbar">
         <img src="resources/images/Planet-Shop.jpg" alt="logo-img">
         <form action="#" class="search">
-            <input type="text" id="searchbar" class="search" placeholder="Search..." >
+            <input type="text" id="searchbar" class="search" placeholder="Search..." onclick="onSearchbar">
             <button type="submit" class="fas fa-search"></button>
 
         </form>
-        <div class="search_list">
-            <ul id="list">
-                <li>Men Shirts</li>
-                <li>Men Shoes</li>
-                <li>Mobiles</li>
-                <li>laptop</li>
-                <li>Camera</li>
-                <li>Watch</li>
-                <li>Women Shoes</li>
-                <li>Women Dresses</li>
-                <li>Women Saries</li>
-                <li>Men Sandles</li>
-                <li>Men Chappal</li>
-                <li>Women Sandle</li>
-                <li>Women Sandles</li>
-            </ul>
-        </div>
+       
 <div  class="opt">
         <ul class="list">
             <li><a href="login.html" target="_self">Login</a></li>
-            <li><a href="myfavorite.html" target="_self">MyFavorite</a></li>
+            <li><a href="Sign_up.html" target="_self">Signup</a></li>
             <li><a href="#contact">More</a></li>  
         </ul>
     </div>
+    
        <!-- <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown button
@@ -54,12 +39,12 @@
             <img class="menu-bar" id="menuimg" src="./resources/images/menu-bar.png" alt="menu bar image">
     </header>
     <div class="categories">
-        <a href="electronics.html" target="_self"><img src="resources/images/electronics.png" alt="symbol" class="items"><h2>Electronics</h2></a>
-         <a href="#" target="_self"> <img src="resources\images\Grocery.jpg"  class="items" alt="symbol"> <h2>Grocery</h2></a>
-         <a href="#" target="_self"> <img src="resources\images\books.jpg"  class="items" alt="symbol"> <h2>Books</h2></a>
-         <a href="#" target="_self"> <img src="resources\images\men-fashion.jpg"  class="items" alt="symbol"> <h2>Men-clothes</h2></a>
-         <a href="#" target="_self"> <img src="resources\images\sports.png"  class="items" alt="symbol"> <h2>Sports</h2></a>
-         <a href="#" target="_self"> <img src="resources\images\women-clothes.png"  class="items" alt="symbol"> <h2>woman-clothes</h2></a>
+        <a href="electronics/electronics.html" target="_self"><img src="resources/images/electronics.png" alt="symbol" class="items"><h2>Electronics</h2></a>
+         <a href="Grocery/grocery.html" target="_self"> <img src="resources\images\Grocery.jpg"  class="items" alt="sym bol"> <h2>Grocery</h2></a>
+         <a href="Books/books.html" target="_self"> <img src="resources\images\books.jpg"  class="items" alt="symbol"> <h2>Books</h2></a>
+         <a href="Men_clothes/men_clothes.html" target="_self"> <img src="resources\images\men-fashion.jpg"  class="items" alt="symbol"> <h2>Men-clothes</h2></a>
+         <a href="Sports/sports.html" target="_self"> <img src="resources\images\sports.png"  class="items" alt="symbol"> <h2>Sports</h2></a>
+         <a href="Women_clothes/women_clothes.html" target="_self"> <img src="resources/images/women-clothing.jpg"  class="items" alt="symbol"> <h2>woman-clothes</h2></a>
        
        
          </div>
@@ -138,8 +123,8 @@
                 <div class="contact-details item" id="contact">
                     <h5>Contact</h5>
                     <ul>
-                        <li>mail:planetshop@gmail.com</li>
-                        <li>phone no:123456789</li>
+                        <li><a href="#">Mail-id</a></li>
+                        <li><a href="#">Mob-No</a></li>
                     </ul>
                    </div>
             </footer>
@@ -151,18 +136,6 @@
         menubar.addEventListener('click',()=>{
             navlink.classList.toggle('mobile-view');
         })
-    </script>
-    <script>
-        const onSearchbar=()=>{
-            const inputs=document.querySelector('#searchbar');
-            const filter=inputs.value.toUpperCase();
-            const list=document.querySelectorAll('#list li');
-            list.forEach((el)=>{
-                const text=el.textContent.toUpperCase();
-                el.style.display=text.includes(filter)?"":"none";
-                
-            });
-        };
     </script>
 </body>
 </html>
