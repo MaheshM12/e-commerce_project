@@ -94,6 +94,7 @@
     }
     button:hover{
          background-color: greenyellow;
+         cursor: pointer;
     }
     .card-item{
         display: flex;

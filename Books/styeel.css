@@ -93,6 +93,7 @@
         color:black;
     }
     button:hover{
+        cursor: pointer;
          background-color: greenyellow;
     }
     .card-item{
