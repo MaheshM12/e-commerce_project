@@ -97,10 +97,12 @@
             <input type="email" required placeholder="email_adress" id="email">
         </div>
         <div class="txtfield">
-            <input type="text" required placeholder="Password" id="pass"  minlength="6" maxlength="6">
+            <input type="password" required placeholder="Password" id="pass"  minlength="6" maxlength="6">
+       <!--    <p>show pass</p>
+            <input type="checkbox" id="checkbox">--> 
         </div>
         <div class="txtfield">
-            <input type="text" required placeholder="Confirm Password" id="cpass" minlength="6" maxlength="6">
+            <input type="password" required placeholder="Confirm Password" id="cpass" minlength="6" maxlength="6">
         </div>
         <div class="submit">
             <input type="submit" required onclick="validity" >
@@ -108,5 +110,17 @@
       
        </form>
     </div>
+    <script>
+  /*   function sp(){
+        let pass=document.getElementById('pass').attributes;
+        if(pass.type=='password'){
+            pass.type='text';
+        }
+        else{
+            pass.type='password';
+        }
+       }*/
+    </script>
 </body>
+
 </html>

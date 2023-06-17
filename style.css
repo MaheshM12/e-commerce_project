@@ -81,53 +81,7 @@ width: 35px;
 border-radius: 5px;
 cursor: pointer;
 }
-.slider figure{
-    position: relative;
-    width:500% ;
-    margin-top:20px;
-    height: 500px;
-    left: 0;
-    animation: 10s slider infinite;
-}
-.slider figure img{
-    float: left;
-    width: 20%;
-    height: 500px;
-}
-@keyframes slider{
-    0% {left: 0%;}
-    10% {left: 0%;}
-    20% {left: -100%;}
-    30% {left: -100%;}
-    40% {left: -200%;}
-    50% {left: -200%;}
-    60% {left:-300%;}
-    70%{left:-300%;}
-    85%{left:-300%;}
-    100%{left:-400%}
-}
 
-
-/*
-.slider{
-
-    width: 95%;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50% , -50%);
-    background-image:url('resources/images/fashion-sale-image.jpg');
-    background-size: 100% 100%;
-    animation:slide-show 12s infinite linear;
-    margin:250px 0 25px 0;
-}
-@keyframes slide-show{
-    0%{ background-image:url('resources/images/fashion-sale-image.jpg');}
-    33%{ background-image:url('resources/images/book_saleimage.jpg');}
-    66%{ background-image:url('resources/images/sale_image.jpg');}
-    
-}*/
 .menu{
    width: 20%;
    background-color: bisque;
@@ -193,12 +147,14 @@ cursor: pointer;
     color: black;
 }
 footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+  
 }
 footer .item{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -208,6 +164,7 @@ footer .item{
 }
 footer .item h5{
     font-size: 25px;
+    margin: 2%;
 }
 footer ul li{
    list-style: none;
@@ -225,13 +182,10 @@ header .menu-bar{
     height: 40px;
     width: 70px;
     margin: 10px;
+    z-index: 1;
    
 }
 @media  screen and (min-width:900px) {
-    .mobileview{
-        display: none;
-    } 
-    
     .menu-bar{
         display: none;
     }
@@ -239,19 +193,7 @@ header .menu-bar{
 }
 
 @media  screen and (max-width:900px) { 
-  .slider{
-    display:none;
-  }
-  .mobileview{
-    display: flex;
    
-    flex-direction:row;
-    gap: 10px;
-  }
-  .mobileview img{
-    height: 20%;
-    width: 20%;
-  }
   .categories{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;

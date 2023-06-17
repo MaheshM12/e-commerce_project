@@ -45,7 +45,7 @@ const catego =[...new Set(product.map((item)=>
       <p>${title}</p>
       <h2>$ ${price}.00</h2>`+
       "<button onclick='addtocard("+(i++)+")'>Add to card</button>"+
-      "<button ><a href='./resources/payment.html'>Buy</a></button>"+
+      "<button><a href='./resources/payment.html'>Buy</a></button>"+
       `</div>
       </div>`
       
